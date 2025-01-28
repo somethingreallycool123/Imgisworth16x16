@@ -15,11 +15,10 @@ The Vision Transformer (ViT) revolutionizes image classification by treating ima
 
 ## Repository Structure
 ```
-vit-replication/
-├── notebook.ipynb      # Jupyter Notebook with the full implementation and results
+Imgisworth16x16/
+├── Paper_implementation.ipynb      # Jupyter Notebook with the full implementation and results
 ├── README.md           # This file
 ├── requirements.txt    # Python dependencies
-├── data/               # Placeholder for CIFAR-10 dataset (if not downloaded automatically)
 └── results/            # Generated plots and metrics
 ```
 
