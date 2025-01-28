@@ -7,7 +7,7 @@ The Vision Transformer (ViT) revolutionizes image classification by treating ima
 
 ### Key Features:
 - Implementation of the ViT model from scratch.
-- Processing CIFAR-10 images as 16x16 patches.
+- Processing CIFAR-10 images as 4x4 patches.
 - Training and evaluation scripts with performance metrics.
 - Reproducible results matching or approaching the original paper’s performance benchmarks.
 
@@ -26,11 +26,11 @@ vit-replication/
 ---
 
 ## Dataset
-The [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. For this project, images are resized and divided into 16x16 patches for input to the ViT model.
+The [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. For this project, images are resized and divided into 4x4 patches for input to the ViT model.
 
 ### Dataset Handling:
-- Downloaded automatically using PyTorch’s `torchvision.datasets` module.
-- Preprocessed into 16x16 patches.
+- Downloaded using PyTorch’s `torchvision.datasets` module.
+- Preprocessed into 4x4 patches.
 
 ---
 
@@ -41,10 +41,10 @@ The ViT model is implemented with the following components:
 3. **Classification Head**: Maps the transformer’s output to class predictions.
 
 ### Model Hyperparameters:
-- **Patch size**: 16x16
-- **Embedding dimension**: 768
+- **Patch size**: 4x4
+- **Embedding dimension**: 512
 - **Number of heads**: 12
-- **Number of transformer layers**: 12
+- **Number of transformer layers**: 8
 - **MLP size**: 3072
 
 ---
